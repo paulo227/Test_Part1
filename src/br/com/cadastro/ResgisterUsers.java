@@ -8,7 +8,6 @@ public class ResgisterUsers {
     String name;
     Integer years;
     String gender;
-
     public ResgisterUsers(String name, Integer years, String gender) {
         this.name = name;
         this.years = years;
