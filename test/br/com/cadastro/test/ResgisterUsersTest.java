@@ -15,7 +15,6 @@ public class ResgisterUsersTest {
        List<ResgisterUsers> lista = new ResgisterUsers().cadastreUser();
        Stream<ResgisterUsers> registerF = lista.stream()
                .filter(user -> user.getGender().equals("F".toUpperCase()));
-       Assert.assertTrue("F", true);
-       registerF.forEach(System.out::println);
+       registerF.forEach( usuário -> Assert .assertEquals( usuário .getGender(), "F".toUpperCase()));
     }
 }
